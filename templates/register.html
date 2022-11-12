@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuXw4UzpK7navxjLO0cj9MoSDlME09RBJrbQ&usqp=CAU");
+            background-size: cover;
+                }
+        .container{
+    width: 600px;
+    height:fit-content;
+    align-content: center;
+    background-size: cover;
+    padding: 15px 15px;
+    border-radius: 25px;
+    background: linear-gradient(135deg,#dc0606ca,#05073a);
+}
+.container .heading{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+    cursor: pointer;
+    color:yellow;
+    
+}
+.container .heading:hover{
+    transform: scale(1.02);
+    }
+    
+
+.container .heading::before{
+    content:'';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(135deg,#71b7e6,#9b5b);
+}
+.container form .card-details{
+    margin-top: 25px;
+    justify-content: space-between;
+   }
+   form .card-details .card-box{
+    width: calc(100% / 2 -20px);
+    margin-bottom: 15px;
+
+}
+form .card-details .card-box{
+        margin-bottom: 10px;
+        width: 100%;
+
+    }
+
+    .card-details .card-box input{
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+    .container form .card-details{
+    max-height: 300px;
+    overflow: scroll;
+}
+form .card-details .card-box .details{
+
+font-weight: 500;
+margin-bottom: 5px;
+font-size: 20px;
+text-transform: uppercase;
+color:yellow;
+
+}
+
+form .card-box label .details {
+    height: 45px;
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 20px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+.card-details::-webkit-scrollbar{
+    width: 0;
+}
+    
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+form .check{
+    text-align: left;
+    font-size: 20px;
+}
+
+
+form .button{
+    text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 50%;
+    outline: none;
+    color:#fff;
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #05073a,#dc0606ca);
+}
+form .button input:hover{
+    background: linear-gradient(-135deg, #05073a,#dc0606ca); 
+}
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <div class="heading">REGISTRATION FORM</div>
+    <form action="http://127.0.0.1:8000/register/" method="post">
+        <div class="imgcontainer">
+            <img src="https://thalassafestival.com/wp-content/uploads/2019/12/registration-icon-png-6.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="card-details">
+
+            <div class="card-box" >
+                <span class="details">Name</span>
+                <input type="text" name="name" placeholder="Enter Your Name"> <br>
+            </div>
+            <div class="card-box" >
+                <span class="details">Email</span>
+                <input type="email" name="email" placeholder="Enter Your Email"> <br>
+            </div>
+            <div class="card-box" >
+                <span class="details">Mobile Number</span>
+                <input type="number" name="mobile" placeholder="Enter Your Mobile Number"> <br>
+            </div>
+            <div class="card-box" >
+                <span class="details">DOB</span>
+                <input type="date" name="dob" placeholder="Enter Your DOB"> <br>
+            </div>
+            <div class="card-box" >
+                <span class="details">Password</span>
+                <input type="text" name="Password" placeholder="Enter Your Password"> <br>
+            </div>
+            <div class="check">
+                <input type="checkbox">
+                Agree to terms and conditions
+         
+             </div>
+             
+             
+             <div class="button">
+                 <input type="submit" value="Submit">
+             </div>
+    </div>
+    </form>
+    </div>
+</center>
+</body>
+</html>
